@@ -1,4 +1,4 @@
-document.querySelector('.get-jokes').addEventListener('click', getjokes);
+document.getElementsByClassName('get-jokes').addEventListener('click', getjokes);
 
 function getjokes(e) {
 
@@ -22,11 +22,7 @@ function getjokes(e) {
                 output+= '<li>Something went Wrong!!!</li>';
             }
 
-            document.querySelector('.jokes').innerHTML = output;
-        }
-        else{
-            document.querySelector('.jokes').innerHTML = "kuch nai";
-
+            document.getElementsByClassName('jokes').innerHTML = output;
         }
     }
 
